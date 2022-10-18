@@ -1,0 +1,141 @@
+// Var
+$orangePowerPrime: #FF6600;
+$colorInstagram: #000;
+$colorWhastApp: #000;
+$colorFacebook: #000;
+$colorYoutube: #FF0000;
+
+// default Color
+$white: #FFF;
+$black: #000;
+
+// Var
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.apresentation{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#imgBetterInk {
+    display: flex;
+}
+
+
+.textBetterInk {
+    color: #000;
+    display: flex;
+    margin: 65px 0 0 0;
+}
+
+.textBetterInk span{
+    font-size: 10px;
+    display: flex;
+}
+
+// bestPrinter
+
+#bestPrinter{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#bestPrinter h2{
+    font-weight: 400;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.galleryProducts{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    
+}
+
+#selectedProduct{
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+    margin: 0 20px;
+}
+
+.textGallery h3{
+    font-weight: 500;
+    font-size: 29px;
+}
+
+.textGallery p{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.btnsContact{
+    margin: 80px 0 0 0 ;
+    display: flex;
+}
+
+.btnsContact button{
+    // default styles to buttons
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 35px;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition:.5s;
+    cursor: pointer;
+    // default
+    margin: 0 10px;
+}
+
+.btnsContact button:hover{
+    // default styles to buttons
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    // default styles to buttons
+}
+
+.btnsContact button:nth-child(1){
+    background-color: $orangePowerPrime;
+    color: $white;
+    
+}
+.btnsContact button:nth-child(2){
+    background-color: $colorYoutube;
+    color: $white;
+}
+
+#controllersGallery {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 ;
+}
+
+#controllersGallery button{
+    // default styles to buttons
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 35px;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition:.5s;
+    cursor: pointer;
+    // default
+    margin: 0 10px;
+    background-color: $orangePowerPrime;
+    color: $white;
+}
+
+#controllersGallery button:hover{
+    // default styles to buttons
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    // default styles to buttons
+}
