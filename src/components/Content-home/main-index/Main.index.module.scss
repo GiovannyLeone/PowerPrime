@@ -1,0 +1,245 @@
+// Var
+$orangePowerPrime: #FF6600;
+$colorInstagram: #DD2A7b;
+$colorWhastApp: #3BBF44;
+$colorFacebook: #1778F2;
+$colorYoutube: #FF0000;
+// is-active
+// Outher Style rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+$default-card-box-shadow-is-active: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$default-btn-box-shadow-is-active: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+// disabled
+$default-box-shadow-disabled: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+// default Color
+$white: #FFF;
+$black: #000;
+
+// Var
+
+.wrapper {
+    height: 100%;
+    background-image: linear-gradient(#f5f5f5 40%, #cfcfcf);
+    @media screen and (max-width: 1440px) {
+    }
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 992px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+    }
+}
+
+.apresentation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 50px 0;
+
+    // @media screen and (max-width: 768px) {
+    //     width: 100vw;
+    // }
+}
+
+#imgBetterInk {
+    display: flex;
+}
+
+
+.textBetterInk {
+    color: #000;
+    display: flex;
+    margin: 65px 0 0 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+span.subTextBetterInk {
+    font-size: 15px;
+    display: flex;
+
+    @media screen and (max-width: 992px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
+}
+
+// bestPrinter
+
+#bestPrinter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#bestPrinter h2 {
+    font-weight: 400;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+
+    @media screen and (max-width: 860px) {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.galleryProducts {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        margin: 5px 0;
+    }
+}
+
+.selectProduct {
+    width: 250px;
+    height: 250px;
+    margin: 0 20px;
+
+    @media screen and (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+        margin: 5px 20px;
+    }
+}
+
+#selectedProduct {
+    transition: .5s;
+    width: 550px;
+    height: 550px;
+
+    @media screen and (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+        margin: 5px 20px;
+        padding: 100px;
+    }
+}
+
+.pressBtn {
+    background-color: #000 !important;
+    rotate: 45deg;
+}
+
+.textGallery h3 {
+    font-weight: 500;
+    font-size: 29px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.textGallery p {
+    font-weight: 400;
+    font-size: 15px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.btnsContact {
+    margin: 80px 0 0 0;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        margin: 30px 0 0 0;
+        display: block;
+    }
+}
+
+.btnsContact a button {
+    // default styles to buttons
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 35px;
+    text-transform: uppercase;
+    box-shadow: $default-btn-box-shadow-is-active;
+    transition: .5s;
+    cursor: pointer;
+    // default
+    margin: 0 10px;
+    font-weight: 700;
+    @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 30px;
+        margin: 5px 0;
+    }
+
+}
+
+.btnsContact a button:hover {
+    // default styles to buttons
+    box-shadow: $default-box-shadow-disabled // default styles to buttons
+}
+
+.btnsContact a button:nth-child(1) {
+    background-color: $orangePowerPrime;
+    color: $white;
+
+}
+
+.btnsContact a button.linkWhatsApp {
+    background-color: $colorWhastApp;
+    color: $white;
+}
+
+#controllersGallery {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#controllersGallery button {
+    // default styles to buttons
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 35px;
+    text-transform: uppercase;
+    box-shadow: $default-btn-box-shadow-is-active;
+    transition: .5s;
+    cursor: pointer;
+    // default
+    margin: 0 20px;
+    background-color: $orangePowerPrime;
+    color: $white;
+    font-size: 15px;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+        margin: 0 2px;
+
+
+    }
+}
+
+#controllersGallery button:hover {
+    // default styles to buttons
+    box-shadow: $default-box-shadow-disabled;
+    // default styles to buttons    
+}

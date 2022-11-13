@@ -1,0 +1,103 @@
+// Var
+$orangePowerPrime: #FF6600;
+$colorInstagram: #DD2A7b;
+$colorWhastApp: #3BBF44;
+$colorFacebook: #1778F2;
+$colorYoutube: #FF0000;
+// is-active
+// Outher Style rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+$default-card-box-shadow-is-active: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$default-btn-box-shadow-is-active: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+// disabled
+$default-box-shadow-disabled: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+// default Color
+$white: #FFF;
+$black: #000;
+
+// Var
+
+#aboutUs {
+    width: 650px;
+    margin: 0 auto;
+    height: 50vh;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+#aboutUs h6 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: 860px) {
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+    }
+}
+
+.contentAboutUs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentAboutUs :where(img, p) {
+    display: flex;
+}
+
+.contentImageAboutUs {
+    width: 40%;
+    padding-left: 50px;
+    padding-right: 10px;
+
+    @media screen and (max-width: 992px) {
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+    @media screen and (max-width: 860px) {
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-left: 0px;
+    }
+}
+
+.contentTextAboutUs {
+    width: 60%;
+
+    @media screen and (max-width: 992px) {
+        width: 110%;
+    }
+
+    @media screen and (max-width: 860px) {
+        width: 450%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 50%;
+    }
+}
+
+
+.contentAboutUs p {
+    font-size: 15px;
+    text-align: justify;
+
+    @media screen and (max-width: 860px) {
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+}

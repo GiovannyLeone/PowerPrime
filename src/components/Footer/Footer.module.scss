@@ -1,0 +1,277 @@
+// Var
+$orangePowerPrime: #FF6600;
+$colorInstagram: #DD2A7b;
+$colorWhastApp: #3BBF44;
+$colorFacebook: #1778F2;
+$colorYoutube: #FF0000;
+// is-active
+// Outher Style rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+$default-card-box-shadow-is-active: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$default-btn-box-shadow-is-active: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+// disabled
+$default-box-shadow-disabled: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+// default Color
+$white: #FFF;
+$black: #000;
+
+// Var
+
+#footer {
+    width: 900px;
+    margin: 10rem auto 0 auto;
+
+    @media screen and (max-width: 1200px) {
+        margin: 8.8rem auto 0 auto;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 90%;
+        margin: 6rem auto 0 auto;
+    }
+
+    @media screen and (max-width: 860px) {
+        width: 90%;
+        margin: 4rem auto 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+#listFooter {
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        width: 370px;
+    }
+}
+
+
+.footerPowerprime ul.listMapSite {
+    list-style: none;
+}
+
+.footerPowerprime ul.listMapSite li p {
+    font-size: 20px;
+    color: #000;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+.footerPowerprime ul.listMapSite li a {
+    text-decoration: none;
+    color: #00000099;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+}
+
+.divNetwork {
+    display: flex;
+    margin: 0 0 0 30px;
+
+    @media screen and (max-width: 1200px) {
+        margin: 0 0 0 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 0 0 0 30px;
+    }
+}
+
+.footerNetwork ul.listIcons {
+    list-style: none;
+}
+
+.footerNetwork ul.listIcons li p {
+    font-size: 20px;
+    color: #000;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+.footerNetwork ul.listIcons li span.iconNetwork {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 100%;
+    display: flex;
+    cursor: pointer;
+
+    @media screen and (max-width: 1200px) {
+        width: 30px;
+        height: 30px;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 25px;
+        height: 25px;
+    }
+
+    @media screen and (max-width: 860px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.footerNetwork ul.listIcons :where(li:nth-child(1), li:nth-child(2), li:nth-child(3), li:nth-child(4)) {
+    padding: 0 7px 5px;
+}
+
+.footerNetwork ul.listIcons li:nth-child(1) span.iconNetwork {
+    background-color: $colorInstagram;
+    background-image: url("../../public/images/social-network/icons8-instagram.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 50%;
+
+    @media screen and (max-width: 1200px) {
+        background-size: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        background-size: 18px;
+    }
+
+    @media screen and (max-width: 860px) {
+        background-size: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-size: 25px;
+    }
+}
+
+.footerNetwork ul.listIcons li:nth-child(2) span.iconNetwork {
+    background-color: $colorFacebook;
+    background-image: url("../../public/images/social-network/icons8-facebook.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 50%;
+
+    @media screen and (max-width: 1200px) {
+        background-size: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        background-size: 18px;
+    }
+
+    @media screen and (max-width: 860px) {
+        background-size: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-size: 25px;
+    }
+}
+
+.footerNetwork ul.listIcons li:nth-child(3) span.iconNetwork {
+    background-color: $colorWhastApp;
+    background-image: url("../../public/images/social-network/icons8-whatsapp.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 50%;
+
+    @media screen and (max-width: 1200px) {
+        background-size: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        background-size: 18px;
+    }
+
+    @media screen and (max-width: 860px) {
+        background-size: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-size: 25px;
+    }
+}
+
+.footerNetwork ul.listIcons li:nth-child(4) span.iconNetwork {
+    background-color: $colorYoutube;
+    background-image: url("../../public/images/social-network/icons8-reproduzir-youtube.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 50%;
+
+    @media screen and (max-width: 1200px) {
+        background-size: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        background-size: 18px;
+    }
+
+    @media screen and (max-width: 860px) {
+        background-size: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-size: 25px;
+    }
+}
+
+#infoFooter {
+    margin-top: 30px;
+    border-top: 2px solid #000;
+
+    @media screen and (max-width: 1440px) {
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 860px) {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+}

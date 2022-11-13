@@ -41,3 +41,6 @@ npx create-next-app -ts
 npm i @types/react @types/node -D
 
 npm i Sass
+
+npm install animate.css --save
+import 'animate.css';

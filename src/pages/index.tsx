@@ -1,17 +1,12 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header/Header'
-import Main from '../components/Content/Main'
-
-
-
+import MainIndex from '../components/Content-home/main-index/Main-index'
 
 const Home: NextPage = () => {
     return (
         <>
             <Header />
-            <Main />
+            <MainIndex />
         </>
     )
 }

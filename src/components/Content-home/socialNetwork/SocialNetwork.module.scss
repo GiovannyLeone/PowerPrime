@@ -1,0 +1,230 @@
+// Var
+$orangePowerPrime: #FF6600;
+$colorInstagram: #DD2A7b;
+$colorWhastApp: #3BBF44;
+$colorFacebook: #1778F2;
+$colorYoutube: #FF0000;
+// is-active
+// Outher Style rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+$default-card-box-shadow-is-active: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$default-btn-box-shadow-is-active: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+// disabled
+$default-box-shadow-disabled: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+// default Color
+$white: #FFF;
+$black: #000;
+
+// Var
+//socialNetwork
+
+#socialNetwork_aboutUs_footer {
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+        height: 100%;
+    }
+}
+
+#socialNetwork {
+    width: 900px;
+    height: 100vh;
+    margin: 80px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 60vh;
+        margin: 0px auto 0 auto;
+    }
+}
+
+#socialNetwork h4 {
+    font-size: 35px;
+    font-weight: 400;
+
+    @media screen and (max-width: 860px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+    }
+}
+
+#socialNetwork p {
+    font-size: 15px;
+    font-weight: 400;
+
+    @media screen and (max-width: 860px) {
+        font-size: 13px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+}
+
+.networkCard {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    background-color: $white;
+    box-shadow: $default-card-box-shadow-is-active;
+
+    @media screen and (max-width: 860px) {
+        width: 300px;
+        height: 350px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+.networkCard h5 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 auto;
+
+    @media screen and (max-width: 860px) {
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+    }
+}
+
+.networkCard span {
+    border-bottom: 1px solid #00000099;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.networkCard a {
+    display: flex;
+    text-decoration: none;
+}
+
+.networkCard button {
+    // default styles to buttons
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: $default-btn-box-shadow-is-active;
+    transition: .5s;
+    cursor: pointer;
+    // default
+    text-transform: capitalize;
+    font-size: 28px;
+    margin: 10px auto;
+    text-align: left;
+    padding-left: 7rem;
+    color: $white;
+    font-weight: 200 !important;
+
+    @media screen and (max-width: 860px) {
+        padding-left: 5.7rem;
+        font-size: 23px;
+        width: 250px;
+        height: 45px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-left: 4rem;
+        font-size: 26px;
+        width: 200px;
+        height: 40px;
+    }
+}
+
+.networkCard button:hover {
+    // default styles to buttons
+    box-shadow: $default-box-shadow-disabled;
+    // default styles to buttons    
+}
+
+button.btnNetwork.btnNetworkInstgram {
+    background-color: $colorInstagram;
+    background-image: url("../../../public/images/social-network/icons8-instagram.svg");
+    background-repeat: no-repeat;
+    background-position: 65px;
+    background-size: 40px;
+
+    @media screen and (max-width: 860px) {
+        background-position: 60px;
+        background-size: 27px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-position: 30px;
+        background-size: 30px;
+    }
+}
+
+button.btnNetwork.btnNetworkFacebook {
+    background-color: $colorFacebook;
+    background-image: url("../../../public/images/social-network/icons8-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: 65px;
+    background-size: 40px;
+
+    @media screen and (max-width: 860px) {
+        background-position: 60px;
+        background-size: 27px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-position: 30px;
+        background-size: 27px;
+    }
+}
+
+button.btnNetwork.btnNetworkWhastApp {
+    background-color: $colorWhastApp;
+    background-image: url("../../../public/images/social-network/icons8-whatsapp.svg");
+    background-repeat: no-repeat;
+    background-position: 65px;
+    background-size: 40px;
+
+    @media screen and (max-width: 860px) {
+        background-position: 60px;
+        background-size: 27px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-position: 30px;
+        background-size: 27px;
+    }
+}
+
+button.btnNetwork.btnNetworkYoutube {
+    background-color: $colorYoutube;
+    background-image: url("../../../public/images/social-network/icons8-reproduzir-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 65px;
+    background-size: 40px;
+
+    @media screen and (max-width: 860px) {
+        background-position: 60px;
+        background-size: 27px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-position: 30px;
+        background-size: 30px;
+    }
+}
